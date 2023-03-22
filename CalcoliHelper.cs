@@ -136,21 +136,41 @@ namespace csharp_calcolatrice
 
         //BONUS
 
-        public static int Potenza(int num1, int num2)
+        public static double Potenza(double num1, double num2)
         {
+            double risultato = 1;
+
+            bool Negativo = false;
+
+            if (num1 < 0 )
+            {
+                Negativo = true;
+            }
+
+            if (num2 < 0)
+            {
+                num1 = 1 / num1; 
+                num2 = -num2; 
+            }
 
 
-            if( num1 == 0 & num2 == 0)
+            if ( num1 == 0 & num2 == 0)
             {
                 return 1;
             }
 
 
-            for(int i = 0; i < num2; i++)
+            for(double i = 0; i < num2; i++)
             {
-                int risultato = num1 * num1;
+                risultato *= num1;
+
+
             }
-           
+
+            if (Negativo)
+            {
+                risultato = -risultato;
+            }
 
             return risultato;
         }

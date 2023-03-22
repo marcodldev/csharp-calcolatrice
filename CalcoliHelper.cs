@@ -15,10 +15,10 @@ namespace csharp_calcolatrice
        * V Moltiplicazione di due numeri double
         V Valore assoluto di un numero intero
         V Valore assoluto di un numero double
-        - Minimo tra due numeri interi
-        - Minimo tra due numeri double
-        - Massimo tra due numeri interi
-        - Massimo tra due numeri double
+        V Minimo tra due numeri interi
+        V Minimo tra due numeri double
+        V Massimo tra due numeri interi
+        V Massimo tra due numeri double
      * 
      * 
      *
@@ -101,6 +101,42 @@ namespace csharp_calcolatrice
             {
                 return num1;
             } 
+            else
+            {
+                return num2;
+            }
+        }
+
+        public static double Minimo(double num1, double num2)
+        {
+            if (num1 < num2)
+            {
+                return num1;
+            }
+            else
+            {
+                return num2;
+            }
+        }
+
+        public static int Massimo(int num1,int num2)
+        {
+            if (num1 > num2)
+            {
+                return num1;
+            }
+            else
+            {
+                return num2;
+            }
+        }
+
+        public static double Massimo(double num1, double num2)
+        {
+            if (num1 > num2)
+            {
+                return num1;
+            }
             else
             {
                 return num2;

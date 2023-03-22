@@ -7,24 +7,15 @@ using System.Threading.Tasks;
 namespace csharp_calcolatrice
 {
     /*
-     *  V Somma di due numeri interi
-        V Somma di due numeri double
-        V Differenza tra due numeri interi
-        V Differenza tra due numeri double
-        V Moltiplicazione di due numeri interi
-       * V Moltiplicazione di due numeri double
-        V Valore assoluto di un numero intero
-        V Valore assoluto di un numero double
-        V Minimo tra due numeri interi
-        V Minimo tra due numeri double
-        V Massimo tra due numeri interi
-        V Massimo tra due numeri double
+     *  
      * 
      * 
      *
      */
     public static class CalcoliHelper
     {
+        
+
         public static int Somma(int num1, int num2)
         {
            int risultato = num1 + num2;
@@ -141,6 +132,27 @@ namespace csharp_calcolatrice
             {
                 return num2;
             }
+        }
+
+        //BONUS
+
+        public static int Potenza(int num1, int num2)
+        {
+
+
+            if( num1 == 0 & num2 == 0)
+            {
+                return 1;
+            }
+
+
+            for(int i = 0; i < num2; i++)
+            {
+                int risultato = num1 * num1;
+            }
+           
+
+            return risultato;
         }
     }
 

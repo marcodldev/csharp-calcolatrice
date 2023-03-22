@@ -43,3 +43,11 @@ Console.WriteLine(System.Environment.NewLine);
 Console.WriteLine("Test metodo per calcolare il valore massimo");
 Console.WriteLine(CalcoliHelper.Massimo(2, 5));
 Console.WriteLine(System.Environment.NewLine);
+
+Console.WriteLine("Test metodo per calcolare la potenza della base elevata all’esponente");
+Console.WriteLine(CalcoliHelper.Potenza(2, 5));
+Console.WriteLine(System.Environment.NewLine);
+
+Console.WriteLine("Test metodo per calcolare la potenza con base 0 ed esponente 0");
+Console.WriteLine(CalcoliHelper.Potenza(0,0));
+Console.WriteLine(System.Environment.NewLine);

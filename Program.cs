@@ -1,2 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using csharp_calcolatrice;
+
+Console.WriteLine(CalcoliHelper.ValoreAssoluto(-2));
+
+

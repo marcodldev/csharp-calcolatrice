@@ -12,9 +12,9 @@ namespace csharp_calcolatrice
         V Differenza tra due numeri interi
         V Differenza tra due numeri double
         V Moltiplicazione di due numeri interi
-        - Moltiplicazione di due numeri double
-        - Valore assoluto di un numero intero
-        - Valore assoluto di un numero double
+       * V Moltiplicazione di due numeri double
+        V Valore assoluto di un numero intero
+        V Valore assoluto di un numero double
         - Minimo tra due numeri interi
         - Minimo tra due numeri double
         - Massimo tra due numeri interi
@@ -59,5 +59,54 @@ namespace csharp_calcolatrice
 
             return risultato;
         }
+
+        public static double? MoltiplicazioneDouble(double num1, double num2)
+        {
+            double risultato = num1 * num2;
+
+            return risultato;
+        }
+
+        public static int ValoreAssoluto(int num)
+        {
+            if (num < 0)
+            {
+                int risultato1 = (-num);
+
+                return risultato1;
+            };
+
+            int risultato = num;
+
+            return risultato;
+        }
+
+        public static double ValoreAssolutoDouble(double num)
+        {
+            if (num < 0)
+            {
+                double risultato1 = (-num);
+
+                return risultato1;
+            };
+
+            double risultato = num;
+
+            return risultato;
+        }
+
+        public static int Minimo(int num1, int num2)
+        {
+            if(num1 < num2)
+            {
+                return num1;
+            } 
+            else
+            {
+                return num2;
+            }
+        }
     }
+
+    
 }

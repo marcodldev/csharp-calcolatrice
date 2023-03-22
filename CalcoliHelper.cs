@@ -32,7 +32,7 @@ namespace csharp_calcolatrice
            return risultato;
         }
 
-        public static double SommaDouble(double num1, double num2)
+        public static double Somma(double num1, double num2)
         {
             double risultato = num1 + num2;
 
@@ -46,7 +46,7 @@ namespace csharp_calcolatrice
             return risultato;
         }
 
-        public static double DifferenzaDouble(double num1, double num2)
+        public static double Differenza(double num1, double num2)
         {
             double risultato = num1 - num2;
 
@@ -60,7 +60,7 @@ namespace csharp_calcolatrice
             return risultato;
         }
 
-        public static double? MoltiplicazioneDouble(double num1, double num2)
+        public static double Moltiplicazione(double num1, double num2)
         {
             double risultato = num1 * num2;
 
@@ -81,7 +81,7 @@ namespace csharp_calcolatrice
             return risultato;
         }
 
-        public static double ValoreAssolutoDouble(double num)
+        public static double ValoreAssoluto(double num)
         {
             if (num < 0)
             {
